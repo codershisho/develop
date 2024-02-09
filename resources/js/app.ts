@@ -8,7 +8,17 @@ import router from './router';
 import { createVuetify } from 'vuetify';
 import '@mdi/font/css/materialdesignicons.css';
 import 'vuetify/dist/vuetify.min.css';
-const vuetify = createVuetify();
+/// theme
+import { customLight, customDark } from './theme';
+const vuetify = createVuetify({
+  theme: {
+    defaultTheme: 'customLight',
+    themes: {
+      customLight,
+      customDark,
+    },
+  },
+});
 
 const app = createApp(App);
 
