@@ -21,10 +21,14 @@ const vuetify = createVuetify({
 });
 // plugins
 import AxiosPlugin from './plugins/axios';
+// pinia
+import { createPinia } from 'pinia';
+const pinia = createPinia();
 
 const app = createApp(App);
 
 app.use(vuetify);
 app.use(router);
 app.use(AxiosPlugin);
+app.use(pinia);
 app.mount('#app');

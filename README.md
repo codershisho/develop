@@ -13,3 +13,7 @@ npm install @mdi/font -D
 ### fontfamily
 
 [コミット](https://github.com/codershisho/career-link/commit/b243be7f37600a0d3af90cf5e5bc7f49b200265f)
+
+### pinia
+
+npm install --legacy-peer-deps pinia
