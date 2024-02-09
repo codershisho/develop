@@ -41,6 +41,8 @@ const menus = [
   ['mdi-home', 'Dashboard', '/'],
   ['mdi-account-circle-outline', 'partners', '/partners'],
 ];
+
+const data = axios.get('/api/sample');
 </script>
 
 <style>

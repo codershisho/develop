@@ -8,7 +8,7 @@ import router from './router';
 import { createVuetify } from 'vuetify';
 import '@mdi/font/css/materialdesignicons.css';
 import 'vuetify/dist/vuetify.min.css';
-/// theme
+// theme
 import { customLight, customDark } from './theme';
 const vuetify = createVuetify({
   theme: {
@@ -19,10 +19,12 @@ const vuetify = createVuetify({
     },
   },
 });
+// plugins
+import AxiosPlugin from './plugins/axios';
 
 const app = createApp(App);
 
 app.use(vuetify);
 app.use(router);
-
+app.use(AxiosPlugin);
 app.mount('#app');
