@@ -6,6 +6,9 @@
 
         <title>Laravel Vite React</title>
         @vite(['resources/css/app.css', 'resources/js/app.ts'])
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     </head>
     <body>
         <div id="app"></div>
